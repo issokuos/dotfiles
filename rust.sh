@@ -34,6 +34,7 @@ curl https://wasmtime.dev/install.sh -sSf | bash
 
 # Install additional useful binaries.
 cargo binstall --locked --no-confirm \
+      asciinema \
       asm-lsp \
       bacon \
       bat \
@@ -43,17 +44,20 @@ cargo binstall --locked --no-confirm \
       cargo-component \
       cargo-deny \
       cargo-expand \
+      cargo-hack \
       cargo-insta \
       cargo-leptos \
+      cargo-llvm-cov \
       cargo-make \
       cargo-mutants \
       cargo-nextest \
       cargo-semver-checks \
-      cargo-udeps \
+      cargo-shear \
       cargo-update \
       cargo-tarpaulin \
       cbindgen \
       create-tauri-app \
+      deno \
       difftastic \
       eza \
       fd-find \

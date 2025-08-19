@@ -1,4 +1,5 @@
-theme = "light:Zenbones_light,dark:Zenbones_dark"
+theme = "light:One Half Light,dark:One Half Dark"
+#Zenbones_light,dark:Zenbones_dark"
 
 # Set font parameters.
 font-family = ""

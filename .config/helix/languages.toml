@@ -65,6 +65,11 @@ file-types = ["html"]
 language-servers = ["superhtml-lsp", "harper-ls"]
 
 [[language]]
+name = "just"
+auto-format = true
+formatter = { command = "just", args = ['--justfile', '/dev/stdin', '--dump'] }
+
+[[language]]
 name = "markdown"
 language-servers = ["markdown-oxide", "harper-ls"]
 
