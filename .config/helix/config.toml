@@ -3,6 +3,7 @@ theme = "onedark"
 [editor]
 line-number = "relative"
 auto-completion = false
+end-of-line-diagnostics = "disable"
 
 [editor.cursor-shape]
 insert = "bar"

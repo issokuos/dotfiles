@@ -18,7 +18,8 @@ rustup target add aarch64-linux-android \
      x86_64-unknown-linux-gnu \
      wasm32-unknown-unknown \
      wasm32-wasip1 \
-     wasm32-wasip2
+     wasm32-wasip2 \
+     wasm32-wasip3
 
 # Install nightly toolchain
 rustup toolchain install nightly --allow-downgrade --profile minimal --component clippy rust-docs miri
@@ -41,6 +42,8 @@ cargo binstall --locked --no-confirm \
       bottom \
       cargo-audit \
       cargo-auditable \
+      mdbook \
+      mdbook-linkcheck \
       cargo-component \
       cargo-deny \
       cargo-expand \
@@ -53,8 +56,8 @@ cargo binstall --locked --no-confirm \
       cargo-nextest \
       cargo-semver-checks \
       cargo-shear \
+      cargo-show-asm \
       cargo-update \
-      cargo-tarpaulin \
       cbindgen \
       create-tauri-app \
       deno \
@@ -66,7 +69,8 @@ cargo binstall --locked --no-confirm \
       just \
       leptosfmt \
       maturin \
-      nu \
+      mdbook \
+      mdbook-linkcheck \
       ripgrep \
       sqlx-cli \
       starship \

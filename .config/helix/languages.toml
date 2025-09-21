@@ -17,6 +17,11 @@ IgnoreLinkTitle = false
 command = "uv"
 args= ["run", "ty", "server"]
 
+[language-server.ty.config]
+inlayHints.callArgumentNames = false
+experimental.rename = true
+experimental.autoImport = false
+
 [language-server.ruff]
 command = "uv"
 args = ["run", "ruff", "server"]
@@ -26,7 +31,7 @@ command = "clippy"
 
 [language-server.rust-analyzer.config.cargo]
 features = "all"
-
+            
 [language-server.superhtml-lsp]
 command = "superhtml"
 args = ["lsp"]
@@ -65,6 +70,11 @@ file-types = ["html"]
 language-servers = ["superhtml-lsp", "harper-ls"]
 
 [[language]]
+name = "json"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json" ] }
+auto-format = true
+
+[[language]]
 name = "just"
 auto-format = true
 formatter = { command = "just", args = ['--justfile', '/dev/stdin', '--dump'] }
@@ -87,6 +97,11 @@ auto-format = true
 [[language]]
 name = "python"
 language-servers = ["ruff", "ty", "harper-ls"]
+auto-format = true
+
+[[language]]
+name = "scss"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "scss" ] }
 auto-format = true
 
 [[language]]

@@ -1,11 +1,10 @@
 theme = "light:One Half Light,dark:One Half Dark"
-#Zenbones_light,dark:Zenbones_dark"
 
 # Set font parameters.
 font-family = ""
 font-family = "MonoLisa Variable"
 font-feature = zero ss02 on
-font-size = 14
+font-size = 16
 font-style = Medium
 
 # Remove window title
