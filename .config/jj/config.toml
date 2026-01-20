@@ -30,7 +30,12 @@ merge-editor = [
   "--auto-merge",
 ]
 
+[revset-aliases]
+"immutable_heads()" = "builtin_immutable_heads() | (trunk().. & ~mine())"
+
 [git]
+fetch = "upstream"
+push = "upstream"
 track-default-bookmark-on-clone = false
 private-commits = "description(glob:'private:*')"
 sign-on-push = true
@@ -45,4 +50,4 @@ auto-track-bookmarks = "main"
 auto-update-stale = true
 
 [templates]
-commit_trailers = '''format_signed_off_by_trailer(self)'''
+git_push_bookmark = '"push-" ++ change_id.short()'
