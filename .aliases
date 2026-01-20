@@ -23,17 +23,17 @@ alias w="cd ${HOME}/Work"
 # Copy aliases; works  on both macOS and Linux
 function pbcopy() {
     if [[ "$OSTYPE" =~ ^darwin ]]; then
-	command pbcopy
+    	command pbcopy
     else
-	xclip -selection clipboard
+    	xclip -selection clipboard
     fi
 }
 
 function pbpaste() {
     if [[ "$OSTYPE" =~ ^darwin ]]; then
-	command pbpaste
+    	command pbpaste
     else
-	xclip -selection clipboard
+    	xclip -selection clipboard
     fi
 }
 
