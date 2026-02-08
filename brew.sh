@@ -127,5 +127,11 @@ brew install zls
 # Install HTML language server
 brew install superhtml
 
+# Install icwyu to analyze includes in C and C++ source files
+brew install include-what-you-use
+
+# Install spotify app
+brew install --cask spotify
+
 # Remove outdated versions from the cellar.
 brew cleanup

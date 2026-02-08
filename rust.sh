@@ -79,7 +79,9 @@ cargo binstall --locked --no-confirm \
       tokio-console \
       trunk \
       typstyle \
+      twiggy \
       wash-cli \
+      wasm-opt \
       wasm-tools \
       watchexec-cli \
       wkg
